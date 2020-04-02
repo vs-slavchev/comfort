@@ -2,6 +2,8 @@ map k previousTab
 map n scrollDown
 map e scrollUp
 map i nextTab
+map K goBack
+map I goForward
 map l enterInsertMode
 map j performFind
 map J performBackwardsFind
