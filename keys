@@ -1,0 +1,44 @@
+Vimium keys:
+h, l - left, right
+j, k - up, down 
+H, L - back, forward in history 
+
+t - open new tab
+f - open link 
+F - open link in new tab 
+<alt-f> - open multiple links in new tabs 
+
+x - close current tab 
+X - restore closed tab 
+^ - go to previously-visited tab 
+r - reload page
+
+
+Ranger:
+https://github.com/ranger/ranger/blob/master/ranger/config/rc.conf
+gh - go home
+yy - copy
+pp - paste
+dD - delete
+S - terminal
+<C-d> - back to ranger
+
+
+Vim:
+A - append to line end
+/text - immediately go to ‘text’
+ma - set a mark named ‘a’
+`a - go to mark called ‘a’
+I - go to start of line and enter insert mode
+P - paste one line up
+o - new line from anywhere on current line and enter insert mode
+O - same as above but on the upper line
+. - repeat previous command
+
+actions: v - select, d - delete, c - change, y - yank
+locators: t - till, i - in, a - all
+examples:
+  cw - change word
+  vt; - select till ;
+  ci) - change in ()
+  va} - select all in {} including the {}
