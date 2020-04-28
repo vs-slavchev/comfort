@@ -25,20 +25,39 @@ S - terminal
 
 
 Vim:
-A - append to line end
-/text - immediately go to ‘text’
-ma - set a mark named ‘a’
-`a - go to mark called ‘a’
+A - append after line end
+C - change from cursor to line end
+D - delete from cursor to line end
+/text - immediately go to next occurrence of 'text' n - go to next occurrence; N - go to prev
+?text - go to prev occurrence of 'text
+ma - set a mark named 'a'
+`a - go to mark called 'a'
 I - go to start of line and enter insert mode
 P - paste one line up
 o - new line from anywhere on current line and enter insert mode
 O - same as above but on the upper line
 . - repeat previous command
+$ - line end; d$ - delete from cursor until end of line
+^ - first non-blank char; d^ - delete from line start until cursor
+0 - first char on a line
+~ - switch case of a char; 3~ - switch case of next 3 chars
+f - find; fi - find next i; F - find backwards; 3fi - find the 3rd i
+Ctrl+w - delete prev word: only works in insert mode
 
 actions: v - select, d - delete, c - change, y - yank
-locators: t - till, i - in, a - all
+locators: t - till, i - in, a - all, / - search
 examples:
   cw - change word
   vt; - select till ;
   ci) - change in ()
   va} - select all in {} including the {}
+  d/foo - delete from cursor until foo
+  
+dd - delete line
+cc - change line
+yy - yank line
+
+macro:
+  q - start/stop recording
+  example of a macro called 'w': q -> w -> /text -> enter key -> cw -> 'changed text' -> escape key -> q
+  replay it: @w or 5@w
