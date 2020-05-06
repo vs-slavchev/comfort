@@ -28,7 +28,7 @@ Vim:
 A - append after line end
 C - change from cursor to line end
 D - delete from cursor to line end
-/text - immediately go to next occurrence of 'text' n - go to next occurrence; N - go to prev
+/text - enter to immediately go to next occurrence of 'text'; n - go to next occurrence; N - go to prev
 ?text - go to prev occurrence of 'text
 ma - set a mark named 'a'
 `a - go to mark called 'a'
@@ -67,3 +67,4 @@ macro:
   replay it: @w or 5@w
   
 gg=G - go to start and fix indentation
+"0p - paste from the 0th register which contains the last yanked text, even after deleting with d
