@@ -37,11 +37,17 @@ P - paste one line up
 o - new line from anywhere on current line and enter insert mode
 O - same as above but on the upper line
 . - repeat previous command
+  type text, escape, then . - puts the typed text
 $ - line end; d$ - delete from cursor until end of line
 ^ - first non-blank char; d^ - delete from line start until cursor
 0 - first char on a line
 ~ - switch case of a char; 3~ - switch case of next 3 chars
-f - find; fi - find next i; F - find backwards; 3fi - find the 3rd i
+f - find; fi - find next i; 3fi - find the 3rd i; F - find backwards
+  
+dd - delete line
+cc - change line
+yy - yank line
+
 Ctrl+w - delete prev word: only works in insert mode
 
 actions: v - select, d - delete, c - change, y - yank
@@ -52,12 +58,12 @@ examples:
   ci) - change in ()
   va} - select all in {} including the {}
   d/foo - delete from cursor until foo
-  
-dd - delete line
-cc - change line
-yy - yank line
+
+w - small word, W - big word
 
 macro:
   q - start/stop recording
   example of a macro called 'w': q -> w -> /text -> enter key -> cw -> 'changed text' -> escape key -> q
   replay it: @w or 5@w
+  
+gg=G - go to start and fix indentation
