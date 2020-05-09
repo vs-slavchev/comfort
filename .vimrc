@@ -52,7 +52,7 @@ set laststatus=2
 " => Keys
 """"""""""""""""""""""""""""""
 
-let mapleader = " "
+let mapleader = ","
 
 noremap ; :
 
@@ -65,6 +65,15 @@ noremap h e
 noremap j n
 noremap l i
 
+" Hide search highlighting
+noremap <silent> <leader>h :nohlsearch<cr>
+
+" Paste from yank buffer
+noremap <leader>p "0p
+
+" Fast saving
+nmap <leader>w :w!<cr>
+
 " Have backspace behave as it does in other applications.
 set backspace=2
 
@@ -72,5 +81,3 @@ set backspace=2
 inoremap <F10> <c-o>:w !diff % -<cr>
 nnoremap <F10> :w !diff % -<cr>
 
-" Fast saving
-nmap <leader>w :w!<cr>
