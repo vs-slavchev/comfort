@@ -68,3 +68,4 @@ macro:
   
 gg=G - go to start and fix indentation
 "0p - paste from the 0th register which contains the last yanked text, even after deleting with d
+:%s/foo/bar/gc - search and replace all occurrences of foo to bar, ask for confirmation for each one
