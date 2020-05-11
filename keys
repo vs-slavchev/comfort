@@ -69,3 +69,22 @@ macro:
 gg=G - go to start and fix indentation
 "0p - paste from the 0th register which contains the last yanked text, even after deleting with d
 :%s/foo/bar/gc - search and replace all occurrences of foo to bar, ask for confirmation for each one
+
+splitting:
+  :vsp file - open a file in a new split
+
+  ctrl+k and ctrl+i - move between splits
+  
+  ctrl+w r - swap splits
+  
+  :q - close split
+ 
+tabs:
+  vim -p file1 file2 - open vim with files in tabs
+
+  :tabe file - open file in a new tab
+
+  :tabc - close tab
+
+  gt or gT - go to next or prev tab
+  2gt - go to 2nd tab
