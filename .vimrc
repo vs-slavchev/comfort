@@ -74,10 +74,12 @@ noremap <leader>p "0p
 " Fast saving
 nmap <leader>w :w!<cr>
 
+" Splits navigation
+nnoremap <C-N> <C-W><C-J>
+nnoremap <C-E> <C-W><C-K>
+nnoremap <C-I> <C-W><C-L>
+nnoremap <C-K> <C-W><C-H>
+
 " Have backspace behave as it does in other applications.
 set backspace=2
-
-" Use <F10> to show diff since file save.
-inoremap <F10> <c-o>:w !diff % -<cr>
-nnoremap <F10> :w !diff % -<cr>
 
