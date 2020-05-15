@@ -43,6 +43,7 @@ $ - line end; d$ - delete from cursor until end of line
 0 - first char on a line
 ~ - switch case of a char; 3~ - switch case of next 3 chars
 f - find; fi - find next i; 3fi - find the 3rd i; F - find backwards
+2dt) - delete till 2nd occurrence of )
   
 dd - delete line
 cc - change line
@@ -72,19 +73,13 @@ gg=G - go to start and fix indentation
 
 splitting:
   :vsp file - open a file in a new split
-
   ctrl+k and ctrl+i - move between splits
-  
   ctrl+w r - swap splits
-  
   :q - close split
  
 tabs:
   vim -p file1 file2 - open vim with files in tabs
-
   :tabe file - open file in a new tab
-
   :tabc - close tab
-
   gt or gT - go to next or prev tab
   2gt - go to 2nd tab
