@@ -54,8 +54,6 @@ set laststatus=2
 
 let mapleader = ","
 
-noremap ; :
-
 noremap k h
 noremap n j
 noremap e k
