@@ -81,3 +81,7 @@ nnoremap <C-K> <C-W><C-H>
 " Have backspace behave as it does in other applications.
 set backspace=2
 
+" Tab makes 4 spaces                                                             
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab 
+   
+nnoremap <leader>; A;    
