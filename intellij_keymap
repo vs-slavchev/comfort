@@ -1,0 +1,11 @@
+alt o -> go to declaration
+alt u -> find usage
+alt i -> next tab in editor
+alt k -> prev tab in editor
+alt z -> go to next splitter
+alt s -> pin active tab
+alt f -> recent files
+alt r -> rename
+alt p -> run
+alt x -> close tab
+ctrl alt x -> reopen closed tab
