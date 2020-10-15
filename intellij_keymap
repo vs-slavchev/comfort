@@ -9,3 +9,4 @@ alt r -> rename
 alt p -> run
 alt x -> close tab
 ctrl alt x -> reopen closed tab
+alt a -> tool windows | project
