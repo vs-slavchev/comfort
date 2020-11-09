@@ -49,6 +49,12 @@ dd - delete line
 cc - change line
 yy - yank line
 
+H - move cursor to top of screen
+L - move cursor to bottom of screen
+zz - move middle of screen to cursor
+zt - move top of screen to cursor
+zb - move bottom of scrren to cursor
+
 Ctrl+w - delete prev word: only works in insert mode
 
 actions: v - select, d - delete, c - change, y - yank
