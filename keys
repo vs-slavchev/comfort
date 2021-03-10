@@ -29,7 +29,7 @@ A - append after line end
 C - change from cursor to line end
 D - delete from cursor to line end
 /text - enter to immediately go to next occurrence of 'text'; n - go to next occurrence; N - go to prev
-?text - go to prev occurrence of 'text
+?text - go to prev occurrence of 'text'
 ma - set a mark named 'a'
 `a - go to mark called 'a'
 I - go to start of line and enter insert mode
@@ -37,7 +37,7 @@ P - paste one line up
 o - new line from anywhere on current line and enter insert mode
 O - same as above but on the upper line
 . - repeat previous command
-  type text, escape, then . - puts the typed text
+type text, escape, then . - repeats the text typing
 $ - line end; d$ - delete from cursor until end of line
 ^ - first non-blank char; d^ - delete from line start until cursor
 0 - first char on a line
@@ -73,6 +73,8 @@ macro:
   example of a macro called 'w': q -> w -> /text -> enter key -> cw -> 'changed text' -> escape key -> q
   replay it: @w or 5@w
   
+yiw - yank a word
+vep - after placing cursor at the start of the word you can replace it with paste
 gg=G - go to start and fix indentation
 "0p - paste from the 0th register which contains the last yanked text, even after deleting with d
 :%s/foo/bar/gc - search and replace all occurrences of foo to bar, ask for confirmation for each one
