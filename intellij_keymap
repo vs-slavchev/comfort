@@ -4,9 +4,11 @@ alt i -> next tab in editor
 alt k -> prev tab in editor
 alt z -> go to next splitter (or alt y)
 alt s -> pin active tab
+alt x -> close tab
+ctrl alt x -> reopen closed tab
 alt f -> recent files
 alt r -> rename
 alt p -> run
-alt x -> close tab
-ctrl alt x -> reopen closed tab
+alt d -> debug
 alt a -> tool windows | project
+alt t -> declaration and usages
