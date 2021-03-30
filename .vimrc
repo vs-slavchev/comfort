@@ -69,6 +69,9 @@ noremap <silent> <leader>h :nohlsearch<cr>
 " Paste from yank buffer
 noremap <leader>p "0p
 
+" Go to mark
+noremap <Space> `
+
 " Fast saving
 nmap <leader>w :w!<cr>
 
