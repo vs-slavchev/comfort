@@ -1,0 +1,2 @@
+# show a list of branches ordered by most recent commit
+git config --global alias.br 'branch -v --sort=committerdate'
