@@ -1,9 +1,9 @@
-alt o -> go to declaration
+alt o -> go to implementation
 alt u -> find usage
 alt i -> next tab in editor
 alt k -> prev tab in editor
 alt z -> go to next splitter (or alt y)
-alt s -> pin active tab
+alt s -> (un)pin active tab
 alt x -> close tab
 ctrl alt x -> reopen closed tab
 alt f -> recent files
