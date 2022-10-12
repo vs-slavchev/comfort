@@ -12,3 +12,5 @@ alt p -> run
 alt d -> debug
 alt a -> tool windows | project
 alt t -> declaration and usages
+alt shift t -> go to terminal
+alt shift m -> go to maven
