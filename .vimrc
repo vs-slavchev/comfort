@@ -82,8 +82,8 @@ nnoremap <C-I> <C-W><C-L>
 nnoremap <C-K> <C-W><C-H>
 
 " Vertical navigation
-nnoremap("<C-n>", "<C-d>zz")
-nnoremap("<C-e>", "<C-u>zz")
+nnoremap <C-n> <C-d>zz
+nnoremap <C-e> <C-u>zz
 
 " Have backspace behave as it does in other applications.
 set backspace=2
