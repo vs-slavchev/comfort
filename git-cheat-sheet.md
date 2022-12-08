@@ -11,7 +11,7 @@ git reset --hard HEAD~3 # Go back 3 commits. You *will* lose uncommitted work.
 git reset --hard <commit hash to reset to>
 git checkout newbranch
 ```
-Delete branches by pattern: `git branch -d `git branch --list 'NE-*'``
+Delete branches by pattern: ``git branch -d `git branch --list 'NE-*'` ``
 Rename current branch:
 ```
 git branch -m <new_name>
