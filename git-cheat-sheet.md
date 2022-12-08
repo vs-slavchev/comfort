@@ -1,7 +1,11 @@
 To unstage the file to current commit (HEAD): `git reset HEAD <file>`
+
 To overwrite local changes: `git checkout -- <file>`
+
 Uncommit last commit and keep changes: `git reset --soft HEAD^`
+
 Reset uncommitted changes to staging: `git reset --hard origin/staging`
+
 Move last 2 commits in staging to a new branch:
 ```
 git checkout newbranch
@@ -12,18 +16,21 @@ git reset --hard <commit hash to reset to>
 git checkout newbranch
 ```
 Delete branches by pattern: ``git branch -d `git branch --list 'NE-*'` ``
+
 Rename current branch:
 ```
 git branch -m <new_name>
 git push origin -u <new_name>
 git push origin --delete <old_name>
 ```
+
 Rebase to squash all commits in branch to one commit:
 ```
 git rebase -i <commit hash of the one you want to squash after>
 replace all pick words with s after the first one
 write a nice message with ticket id
 ```
+
 Rebase to put commits from main into a feature branch:
 1. Go to the branch in need of rebasing (recipient of commits)
 2. Enter git fetch origin (This syncs your main branch with the latest changes)
