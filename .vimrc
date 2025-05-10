@@ -8,11 +8,12 @@ set cursorline
 set cursorcolumn
 highlight CursorColumn ctermbg=lightcyan ctermfg=black
 
-" Set the text width to 80 and create a vertical bar in 81st column.
-set textwidth=80
+" Set the text width to 80, but causes line wrapping 
+"set textwidth=80
+" Create a vertical bar in 81st column.
 set colorcolumn=81
 
-"Always show current position
+" Always show current position
 set ruler
 
 " Highlight search results
