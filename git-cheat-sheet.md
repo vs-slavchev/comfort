@@ -6,6 +6,11 @@ Uncommit last commit and keep changes: `git reset --soft HEAD^`
 
 Reset uncommitted changes to staging: `git reset --hard origin/staging`
 
+Stashing:
+`git stash push -m "my_stash_name"`
+`git stash list`
+`git stash apply stash^{/my_stash_name}`
+
 Move last 2 commits in staging to a new branch:
 ```
 git checkout newbranch
