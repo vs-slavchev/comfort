@@ -6,13 +6,13 @@ Find matches in files, print filename and line number:
 `grep -IHnr "Text to find" .`
 
 
-Find text and print next 50 lines:
+Find text and print next 50 lines:  
 `grep -A50 "Error stacktrace:" txt.log`
 
 
-Find text occurrences in all files (-r) in folder (.), print line number (-n):
+Find text occurrences in all files (-r) in folder (.), print line number (-n):  
 `grep -rn "text to find" .`
 
 
-Copy file from server:
+Copy file from server:  
 `scp ubuntu@1.1.1.1:/home/v/txt.log ~/Downloads/txt.log`
