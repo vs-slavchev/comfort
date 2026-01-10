@@ -57,3 +57,58 @@ Update feature branch with latest main:
 git checkout feature
 git rebase main
 ```
+
+checking the log:
+```
+git log --oneline
+
+# Show graph of branches
+git log --graph --oneline --all
+
+git log --pretty=short
+
+# Commits by specific author
+git log --author="John Doe"
+
+# Commits with message containing text
+git log --grep="bug fix"
+
+# Case-insensitive
+git log --grep="BUG" -i
+
+# Multiple patterns (OR)
+git log --grep="fix" --grep="bug"
+
+# Multiple patterns (AND)
+git log --grep="fix" --grep="bug" --all-match
+
+# Commits affecting specific file
+git log -- path/to/file.txt
+
+# Multiple files
+git log -- file1.txt file2.txt
+
+# Files in directory
+git log -- src/
+
+# Follow file renames
+git log --follow -- file.txt
+
+# Commits adding or removing specific string
+git log -S "function_name"
+
+# With regex
+git log -G "regex_pattern"
+
+# Show patches with changes
+git log -S "function_name" -p
+
+# Only merge commits
+git log --merges
+
+# Exclude merge commits
+git log --no-merges
+
+
+```
+
