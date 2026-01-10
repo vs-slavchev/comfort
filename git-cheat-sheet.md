@@ -47,3 +47,13 @@ Rebase to put commits from main into a feature branch:
 6. Enter git rebase --continue (or git rebase --skip if git complains that there were no changes after resolving all conflicts)
 7. Repeat as necessary as merge conflicts arise in the subsequent commits
 8. Once the rebase is complete, enter git push origin HEAD --force
+
+Other rebasing:
+`git rebase -i main`
+Use `fixup (f)` to squash and skip renaming.
+
+Update feature branch with latest main:
+```
+git checkout feature
+git rebase main
+```
